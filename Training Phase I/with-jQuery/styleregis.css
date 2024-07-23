@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fff9f0;
+  color: #ff0808;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: white;
+  padding: 20px;
+}
+
+.logo-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+header nav {
+  margin: 10 5px;
+}
+
+header nav ul {
+  margin: 10 5px;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+}
+
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.input-box {
+  background-color: #ffffff;
+  color: rgb(4, 216, 0);
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input-box label {
+  color: #333;
+}
+
+.form .input-box input,
+.form .select-box {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form .gender-box {
+  margin-top: 20px;
+}
+
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.gender-option,
+.gender {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.gender {
+  column-gap: 5px;
+}
+
+.gender input {
+  accent-color: rgb(232, 88, 10);
+}
+
+.gender input,
+.gender label {
+  cursor: pointer;
+}
+
+.gender label {
+  color: #707070;
+}
+
+.address input,
+.address .select-box {
+  margin-top: 15px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #171515;
+  font-size: 1rem;
+}
+
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(255, 175, 122);
+}
+
+.form button:hover {
+  background: rgba(253, 101, 0, 0.795);
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  
+  .gender-option,
+  .gender {
+    row-gap: 15px;
+  }
+}
+
+footer {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
